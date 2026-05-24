@@ -1,0 +1,52 @@
+
+HR EMPLOYEE ATTRITION ANALYSIS REPORT
+IBM HR Analytics Dataset
+======================================
+
+DATASET OVERVIEW
+- Total Employees: 1,470
+- Employees Who Left: 237
+- Overall Attrition Rate: 16.1%
+
+KEY FINDINGS
+============
+
+1. OVERTIME IS THE STRONGEST DRIVER
+   - Employees with OverTime: 30.5% attrition
+   - Employees without OverTime: 10.4% attrition
+   - Employees doing overtime are 3x more likely to leave.
+
+2. JOB ROLE MATTERS
+   - Sales Representatives: 39.8% (highest risk)
+   - Laboratory Technicians: 23.9%
+   - Research Directors: 2.5% (lowest risk)
+
+3. COMPENSATION GAP
+   - Average income of employees who left: $4,787/month
+   - Average income of employees who stayed: $6,833/month
+   - Employees who left earned $2,046 less per month on average.
+
+4. BUSINESS TRAVEL INCREASES RISK
+   - Frequent travelers: 24.9% attrition
+   - Non-travelers: 8.0% attrition
+
+5. WORK-LIFE BALANCE IS CRITICAL
+   - Poor work-life balance: 31.2% attrition
+   - Good work-life balance: 14.2% attrition
+
+6. YOUNGER EMPLOYEES LEAVE EARLIER
+   - Average age of employees who left: 33.6 years
+   - Average age of employees who stayed: 37.6 years
+   - Average tenure of employees who left: 5.1 years vs 7.4 years
+
+BUSINESS RECOMMENDATIONS
+========================
+1. Reduce mandatory overtime, especially in Sales and Lab roles.
+2. Review compensation for high-risk roles (Sales Representatives).
+3. Introduce flexible travel policies for frequent travelers.
+4. Implement work-life balance programs targeting younger employees.
+5. Create early career development paths to retain junior employees.
+
+TOOLS USED
+==========
+Python, Pandas, Matplotlib
