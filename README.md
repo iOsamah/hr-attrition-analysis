@@ -1,44 +1,63 @@
-# HR Employee Attrition Analysis
+# 👥 IBM HR Employee Attrition Analysis
 
-Exploratory data analysis of 1,470 IBM employees to identify key drivers of attrition (16.1% overall rate), built with Python and Pandas.
+![Python](https://img.shields.io/badge/Python-3.10+-1F3864?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-## Objective
-Identify which employee segments are most at risk of leaving, and provide actionable HR recommendations to improve retention.
+Exploratory analysis of **1,470 employees** to identify what drives attrition — **16.1% overall rate (237 employees)** — with actionable HR recommendations.
 
-## Key Insights
-- **OverTime is the strongest driver:** employees doing overtime churn at 30.5% vs 10.4% without — 3x higher risk.
-- **Compensation gap:** employees who left earned $2,046/month less than those who stayed.
-- **Sales Representatives** have the highest attrition rate at 39.8%.
-- **Frequent business travelers** churn at 24.9% vs 8.0% for non-travelers.
-- **Poor work-life balance** leads to 31.2% attrition vs 14.2% for good balance.
-- **Younger employees leave earlier:** average age 33.6 vs 37.6 for those who stayed.
+![HR Attrition Dashboard](hr_attrition_analysis.png)
 
-## Business Recommendations
-- Reduce mandatory overtime especially in Sales and Lab roles.
-- Review compensation for high-risk roles.
-- Introduce flexible travel policies for frequent travelers.
-- Create early career development paths to retain junior employees.
+## 🎯 Business Question
+Which employees are most at risk of leaving, and what can HR change to retain them?
 
-## Tools & Skills
-- Python, Pandas (data cleaning & analysis)
-- Matplotlib (data visualization)
-- Feature engineering, group analysis, attrition rate calculation
+## 🔍 Key Insights
+| Driver | Higher attrition | Lower attrition |
+|--------|-----------------|-----------------|
+| **Overtime** (strongest) | With overtime **30.5%** | Without **10.4%** |
+| **Job role** | Sales Representatives **39.8%** | Research Directors **2.5%** |
+| **Business travel** | Frequent travelers **24.9%** | Non-travelers **8.0%** |
+| **Work-life balance** | Low **31.2%** | High **14.2%** |
+| **Monthly income** | Leavers avg **$4,787** | Stayers avg **$6,833** |
+| **Age & tenure** | Leavers: **33.6** yrs old, **5.1** yrs tenure | Stayers: **37.6** yrs old, **7.4** yrs tenure |
 
-## Process
-1. **Data Import** — loaded 1,470 employee records across 35 columns.
-2. **Data Cleaning** — removed constant columns, added satisfaction labels, saved clean dataset separately.
-3. **Exploratory Analysis** — calculated attrition rates by department, role, overtime, travel, income, and demographics.
-4. **Visualization** — nine-panel dashboard highlighting all key attrition drivers.
-5. **Report** — written summary of findings and recommendations.
+## 💡 Recommendations
+1. **Reduce mandatory overtime**, especially in Sales and Lab roles.
+2. **Review compensation** for high-risk roles such as Sales Representatives.
+3. **Introduce flexible travel policies** for frequent travelers.
+4. **Run work-life balance programs** targeting younger employees.
+5. **Build early-career development paths** to retain junior staff.
 
-## Visualizations
-![HR Attrition Analysis](hr_attrition_analysis.png)
+## 🛠️ Process
+1. **Import** — 1,470 records × 35 columns
+2. **Cleaning** — removed constant columns, added readable satisfaction labels, saved a clean dataset
+3. **Analysis** — attrition rates by department, role, overtime, travel, income, and demographics
+4. **Visualization** — nine-panel dashboard of all key drivers
+5. **Report** — written summary of findings and recommendations
 
-## Project Files
-| File | Description |
-|------|-------------|
-| `hr_raw.csv` | Original dataset (unmodified) |
-| `hr_clean.csv` | Cleaned and enriched dataset |
-| `hr_analysis.ipynb` | Full analysis notebook |
-| `hr_attrition_analysis.png` | Nine-panel visualization dashboard |
-| `hr_attrition_report.txt` | Written findings and recommendations |
+## 📁 Project Structure
+```
+├── data/
+│   ├── hr_raw.csv              # original dataset (unmodified)
+│   └── hr_clean.csv            # cleaned & enriched dataset
+├── hr_analysis.ipynb           # full analysis notebook
+├── hr_attrition_analysis.png   # nine-panel dashboard
+├── hr_attrition_report.txt     # written findings & recommendations
+└── requirements.txt
+```
+
+## ▶️ How to Run
+```bash
+git clone https://github.com/iOsamah/hr-attrition-analysis.git
+cd hr-attrition-analysis
+pip install -r requirements.txt
+jupyter notebook hr_analysis.ipynb
+```
+
+## 📊 Dataset
+[IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset) — fictional dataset created by IBM data scientists.
+
+---
+
+**Osama Dhifallah Hamdi** · [LinkedIn](https://linkedin.com/in/osama0hamdi) · [GitHub](https://github.com/iOsamah)
